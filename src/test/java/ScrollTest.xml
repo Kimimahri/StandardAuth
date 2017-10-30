@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ScrollTests">
+    <test name="ScrollTest">
+        <parameter name="url" value="https://google.ru/"/>
+        <parameter name="timeout" value="10"/>
+        <parameter name="str" value="Time to search something"/>
+        <parameter name="driverPath" value="src/resources/chromedriver.exe"/>
+        <classes>
+            <class name="ScrollTest"/>
+        </classes>
+    </test>
+</suite>
