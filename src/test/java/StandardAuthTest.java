@@ -6,9 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.MainPage;
-
 import java.util.concurrent.TimeUnit;
-
 import net.lightbody.bmp.proxy.ProxyServer;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.remote.CapabilityType;
