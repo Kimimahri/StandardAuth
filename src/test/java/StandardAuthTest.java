@@ -6,13 +6,15 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.MainPage;
-import java.io.IOException;
+
 import java.util.concurrent.TimeUnit;
+
 import net.lightbody.bmp.proxy.ProxyServer;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.StandardAuth;
+
 
 public class StandardAuthTest {
     private WebDriver driver;
@@ -34,9 +36,8 @@ public class StandardAuthTest {
         driver.manage().window().maximize();
     }
 
-    @Parameters({"str"})
     @Test
-    private void scrollCheckTest(String str) throws IOException, InterruptedException {
+    private void standardAuthTest() {
         MainPage mainPage = new MainPage(driver);
         StandardAuth standardAuth = new StandardAuth(driver);
 
