@@ -48,5 +48,4 @@ public class StandardAuthTest {
         driver.quit();
         server.stop();
     }
-
 }
