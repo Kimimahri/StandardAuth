@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="ScrollTests">
-    <test name="ScrollTest">
-        <parameter name="url" value="https://google.ru/"/>
+<suite name="StandardAuth">
+    <test name="StandardAuth">
+        <parameter name="url" value="https://auth-demo.aerobatic.io/"/>
         <parameter name="timeout" value="10"/>
         <parameter name="str" value="Time to search something"/>
         <parameter name="driverPath" value="src/resources/chromedriver.exe"/>
+        <parameter name="domain" value="aerobatic.io"/>
+        <parameter name="username" value="aerobatic"/>
+        <parameter name="password" value="aerobatic"/>
         <classes>
-            <class name="ScrollTest"/>
+            <class name="StandardAuthTest"/>
         </classes>
     </test>
 </suite>
